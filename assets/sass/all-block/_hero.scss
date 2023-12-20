@@ -58,6 +58,9 @@ $font-weights: ('extralight': 200, 'light': 300, 'regular': 400, 'medium': 500, 
                 transition: box-shadow .3s ease-in-out;
                 cursor: pointer;
             }
+            .hero-rwd-btn{
+                display: none;
+            }
         }
         .hero__images{
             padding-top: 2;
@@ -83,11 +86,11 @@ $font-weights: ('extralight': 200, 'light': 300, 'regular': 400, 'medium': 500, 
             width: 36.6rem;
             height: fit-content;
             border-radius: 4rem;
-            // position: relative;
             padding: 2.4rem;
             background-image: linear-gradient(30deg, #56ED749D, #16F8296B, #6DEE874A);
             .hero__description{
                 width: 20.6rem;
+                padding-top: 0;
                 .title{
                     font-size: 1.1rem;
                     font-weight: map-get($font-weights, medium);
@@ -130,7 +133,6 @@ $font-weights: ('extralight': 200, 'light': 300, 'regular': 400, 'medium': 500, 
                 }
             }
             .hero__images{
-                padding-top: 2;
                 img:first-child{
                     width: 8.2rem;
                     position: absolute;

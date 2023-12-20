@@ -203,6 +203,9 @@
   transition: box-shadow 0.3s ease-in-out;
   cursor: pointer;
 }
+.hero .container .hero__description .hero-rwd-btn {
+  display: none;
+}
 .hero .container .hero__images {
   padding-top: 2;
 }
@@ -232,6 +235,7 @@
   }
   .hero .container .hero__description {
     width: 20.6rem;
+    padding-top: 0;
   }
   .hero .container .hero__description .title {
     font-size: 1.1rem;
@@ -272,9 +276,6 @@
   .hero .container .hero__description .hero-rwd-btn i {
     display: block;
     margin-left: 0.2rem;
-  }
-  .hero .container .hero__images {
-    padding-top: 2;
   }
   .hero .container .hero__images img:first-child {
     width: 8.2rem;
