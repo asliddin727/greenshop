@@ -1,0 +1,30 @@
+header.header 
+    .container
+        nav 
+            img(src="../assets/images/icons/logo.svg", alt="Logo")
+            ol.nav 
+                li.nav__item    
+                    a.nav__link.active Home 
+                li.nav__item    
+                    a.nav__link Shop
+                li.nav__item    
+                    a.nav__link Plant Care
+                li.nav__item    
+                    a.nav__link Blogs
+            .btn-block 
+                .search-btn 
+                    img(src="../assets/images/icons/search-icon.svg", alt="Search button")
+                .cart-btn 
+                    img(src="../assets/images/icons/cart-icon.svg", alt="Cart button")
+                    span 0
+                a.login.btn(href="#") <i class="fa-solid fa-arrow-right-from-bracket"></i> login
+        .rwd-block
+            form(action="/").rwd-search-btn 
+                a(href="#") 
+                    img(src="../assets/images/icons/search-icon.svg", alt="Search button")
+                input(type="text" placeholder="Find your plants")
+            a.filter-btn(href="#")
+                img(src="../assets/images/icons/Filter.svg" alt="Filter") 
+                    
+                
+                

@@ -1,0 +1,149 @@
+@use "sass:map";
+
+$font-weights: ('extralight': 200, 'light': 300, 'regular': 400, 'medium': 500, 'semibold': 600, 'bold': 700, 'extrabold': 800, 'black': 900);
+
+
+.hero{
+    margin-top: 1.2rem;
+    .container{
+        height: 45rem;
+        @include flexbox-row;
+        align-items: flex-start;
+        background-image: linear-gradient(30deg, #F5F5F5, #F5F5F584);
+        margin-left: auto;
+            position: relative;
+            padding: 0 4rem;
+        .hero__description{
+            width: 56rem;
+            padding-top: 6.8rem;
+            .title{
+                font-size: 1.4rem;
+                font-weight: map-get($font-weights, medium);
+                color: $black;
+                text-transform: uppercase;
+                line-height: 1.6rem;
+                letter-spacing: 10%;
+            }
+            h1{
+                font-size: 7rem;
+                font-weight: map-get($map: $font-weights, $key: black);
+                line-height: 7rem;
+                .text-green{
+                    color: $green;
+                }
+            }
+            .desc{
+                font-size: 1.4rem;
+                font-weight: map-get($font-weights, regular);
+                color: #727272;
+                line-height: 2.4rem;
+                margin-bottom: 4.4rem;  
+            }
+            .hero.btn{
+                font-size: 1.6rem;
+                font-weight: map-get($map: $font-weights, $key: bold);
+                border: none;
+                background-color: $green;
+                color: #fff;
+                line-height: 2rem;
+                padding: 1.1rem 2.6rem;
+                border-radius: .6rem;
+                transition: box-shadow .3s ease-in-out;
+                i{
+                    display: none;
+                }
+            }
+            .hero.btn:hover{
+                box-shadow: 0 0 1rem $green;
+                transition: box-shadow .3s ease-in-out;
+                cursor: pointer;
+            }
+        }
+        .hero__images{
+            padding-top: 2;
+            img:first-child{
+                position: absolute;
+                right: 34rem;
+                bottom: 3.5rem;
+            }
+            .big__img{
+                position: absolute;
+                right: 0;
+                bottom: 0;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .hero{
+        margin-top: 1.7rem;
+        .container{
+            overflow: hidden;
+            width: 36.6rem;
+            height: fit-content;
+            border-radius: 4rem;
+            // position: relative;
+            padding: 2.4rem;
+            background-image: linear-gradient(30deg, #56ED749D, #16F8296B, #6DEE874A);
+            .hero__description{
+                width: 20.6rem;
+                .title{
+                    font-size: 1.1rem;
+                    font-weight: map-get($font-weights, medium);
+                    color: $black;
+                    text-transform: uppercase;
+                    line-height: 1.6rem;
+                    letter-spacing: 10%;
+                }
+                h1{
+                    font-size: 2.4rem;
+                    font-weight: map-get($map: $font-weights, $key: black);
+                    line-height: 2.9rem;
+                    .text-green{
+                        color: $green;
+                    }
+                }
+                .desc{
+                    font-size: 1.2rem;
+                    line-height: 1.8rem;
+                    margin-bottom: 1rem;  
+                    span{
+                        display: none;
+                    }
+                }
+                .hero.btn{
+                    display: none;
+                }
+                .hero-rwd-btn{
+                    font-weight: map-get($map: $font-weights, $key: bold);
+                    font-size: 1.2rem;
+                    background: none;
+                    color: $green;
+                    @include flexbox-row;
+                    align-items: center;
+                    cursor: pointer;
+                    i{
+                        display: block;
+                        margin-left: .2rem;
+                    }
+                }
+            }
+            .hero__images{
+                padding-top: 2;
+                img:first-child{
+                    width: 8.2rem;
+                    position: absolute;
+                    right: 6rem;
+                    bottom: 1.3rem;
+                }
+                .big__img{
+                    width: 21.3rem;
+                    position: absolute; 
+                    right: -7rem;
+                    bottom: 0;
+                }
+            }
+        }
+    }
+}

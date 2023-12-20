@@ -1,0 +1,27 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        //- FONTAWESOME CSS
+        link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css")
+        //- CSS STYLE
+        link(rel="stylesheet", href="../assets/css/main.css")
+        title Greenshop 
+    body 
+        include ./components/header.pug
+        main.main 
+            section.hero 
+                .container 
+                    .hero__description 
+                        span.title Welcome to GreenShop
+                        h1 Let’s Make a Better 
+                            span.text-green Planet
+                        p.desc We are an online plant shop offering a wide range 
+                            span cheap and trendy plants. Use our plants to create an unique Urban Jungle. Order your favorite plants!
+                        a.hero.btn SHOP NOW
+                        a.hero-rwd-btn SHOP NOW 
+                            <i class="fa-solid fa-arrow-right"></i>
+                    .hero__images
+                        img(src="../assets/images/hero-little.png", alt="Flower")
+                        img.big__img(src="../assets/images/hero.png", alt="FLower")
