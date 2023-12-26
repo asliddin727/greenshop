@@ -1,0 +1,92 @@
+@use "sass:map";
+
+$font-weights: ('extralight': 200, 'light': 300, 'regular': 400, 'medium': 500, 'semibold': 600, 'bold': 700, 'extrabold': 800, 'black': 900);
+
+
+.filterProduct{
+    margin-top: 3rem;
+    .container{
+        .filter{
+            padding: 1.4rem 2.4rem;
+            max-width: 31rem;
+            height: fit-content;
+            background-color: #FBFBFB;
+            h4{
+                font-size: 1.8rem;
+                font-weight: map-get($map: $font-weights, $key: bold);
+                line-height: 1.6rem;
+                margin-bottom: .7rem;
+                text-transform: capitalize;
+                color: #3D3D3D;
+            }
+            .product_list{
+                margin-left: 1rem;
+                margin-bottom: 3.6rem;
+                .list__item{
+                    .list__link{
+                        font-size: 1.5rem;
+                        font-weight: map-get($font-weights, regular);
+                        line-height: 4rem;
+                        text-transform: capitalize;
+                        color: #3D3D3D;
+                        span{
+                            float: right;
+                        }
+                    }
+                    .list__link.active{
+                        color: $green;
+                        font-weight: map-get($map: $font-weights, $key: bold);
+                    }
+                }
+            }
+            .price__range{
+                .slider{
+                    height: .5rem;
+                    border-radius: .5rem;
+                    background: #C5C5C5;
+                    position: relative;
+                    .progress{
+                        height: .5rem;
+                        left: 2.5rem;
+                        right: 2.5rem;
+                        position: absolute;
+                        border-radius: .5rem;
+                        background-color: $green;
+                    }
+                }
+                // .range__input{  
+                //     position: relative;
+                //     input{
+                //         position: absolute;
+                //         -webkit-appearance: none;
+                //         appearance: none;
+                //         width: 100%;
+                //         max-width: 28rem;
+                //         height: .5rem;
+                //         background-color: #B3B3B3;
+                //         pointer-events: none;
+                //     }
+                //     input[type="range"]::-webkit-slider-thumb{
+                //         height: 1.7rem;
+                //         width: 1.7rem;
+                //         border-radius: 50%;
+                //         pointer-events: auto;
+                //         -webkit-appearance: none;
+                //         background: $green;
+                //         cursor: pointer;
+                //     }
+                //     input[type="range"]::-moz-range-thumb{
+                //         height: 1.7rem;
+                //         width: 1.7rem;
+                //         border: .2rem solid #fff;
+                //         border-radius: 50%;
+                //         pointer-events: auto;
+                //         -moz-appearance: none;
+                //         background: $green;
+                //         cursor: pointer;
+                //     }
+                // }
+            }
+        }
+    }
+}

@@ -25,3 +25,78 @@ html(lang="en")
                     .hero__images
                         img(src="../assets/images/hero-little.png", alt="Flower")
                         img.big__img(src="../assets/images/hero.png", alt="FLower")
+            //- SECTION FILTER AND PRODUCTS
+            section.filterProduct 
+                .container 
+                    .filter 
+                        h4 categories
+                        ol.product_list 
+                            li.list__item 
+                                a.list__link.active(href="#") house plants 
+                                    span (13) 
+                            li.list__item 
+                                a.list__link(href="#") potter plants 
+                                    span (12)
+                            li.list__item 
+                                a.list__link(href="#") seeds 
+                                    span (65)
+                            li.list__item 
+                                a.list__link(href="#") small plants 
+                                    span (39)
+                            li.list__item 
+                                a.list__link(href="#") big plants 
+                                    span (23)
+                            li.list__item 
+                                a.list__link(href="#") succulents 
+                                    span (17)
+                            li.list__item 
+                                a.list__link(href="#") trerrariums 
+                                    span (19)
+                            li.list__item 
+                                a.list__link(href="#") gardening plants 
+                                    span (13)
+                            li.list__item 
+                                a.list__link(href="#") accessories 
+                                    span (18)
+                        .price__range 
+                            h4.price__title Price range 
+                            .slider 
+                                .progress
+                            .range__input 
+                                input.minInput(type="range", min="1000", max="2000", value="1200")
+                                input.maxInput(type="range", min="1000", max="2000", value="1800")
+                            p.price $
+                                span.minPrice 39 - $
+                                    span.maxPrice 1230
+                            a(href="#").filter__btn Filter 
+                        ol.size
+                            li.size__item 
+                                a.size__link(href="#") Small    
+                                    span (119)
+                            li.size__item 
+                                a.size__link(href="#") Medium    
+                                    span (86)
+                            li.size__item 
+                                a.size__link(href="#") Large    
+                                    span (78)
+                        .super__sale    
+                            img(src="../assets/images/SuperSale.png", alt="Super sale")
+                            span UP TO 75% OFF
+                            img(src="../assets/images/super-sale-img.png", alt="sale image")
+                    .products 
+                        .product__title 
+                            ol.title__list 
+                                li.title__item
+                                    a.title__link(href="#") All plants 
+                                li.title__item
+                                    a.title__link(href="#") New Arrivals
+                                li.title__item
+                                    a.title__link(href="#") Sale 
+                            .short__by 
+                                .title Short by: 
+                                select#sort(name="sort") 
+                                    option(value="defaul_sorting") Default sorting
+                                    option(value="defaul_sorting") Default sorting
+                                    option(value="defaul_sorting") Default sorting
+                            
+                                

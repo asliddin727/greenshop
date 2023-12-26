@@ -90,10 +90,10 @@ $font-weights: ('extralight': 200, 'light': 300, 'regular': 400, 'medium': 500, 
             align-items: center;
             justify-content: center;
             display: none;
+            width: max-content;
             .rwd-search-btn{
                 @include flexbox-row;
                 align-items: center;
-                // justify-content: center;
                 background-color: #f8f8f8;
                 padding: 1.5rem 1.1rem;
                 border-radius: 1rem;
