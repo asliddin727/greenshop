@@ -7,6 +7,8 @@ html(lang="en")
         link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css")
         //- CSS STYLE
         link(rel="stylesheet", href="../assets/css/main.css")
+        //- JAVASCRIPT 
+        script(defer src="./assets/js/script.js") 
         title Greenshop 
     body 
         include ./components/header.pug
@@ -58,17 +60,20 @@ html(lang="en")
                             li.list__item 
                                 a.list__link(href="#") accessories 
                                     span (18)
+                                    
+                        h4.price__title Price range 
                         .price__range 
-                            h4.price__title Price range 
                             .slider 
                                 .progress
                             .range__input 
-                                input.minInput(type="range", min="1000", max="2000", value="1200")
-                                input.maxInput(type="range", min="1000", max="2000", value="1800")
-                            p.price $
-                                span.minPrice 39 - $
-                                    span.maxPrice 1230
-                            a(href="#").filter__btn Filter 
+                                input.minInput(type="range", min="0", max="1900", value="0")
+                                input.maxInput(type="range", min="0", max="1900", value="1230")
+                            p.price 
+                                span.spanPrice $ 
+                                    input.input-min(type="text", value="0", disabled)
+                                    input.input-max(type="text", value="1230", disabled)
+                                a(href="#").filter__btn Filter 
+                        h4.size__title size
                         ol.size
                             li.size__item 
                                 a.size__link(href="#") Small    
@@ -82,21 +87,21 @@ html(lang="en")
                         .super__sale    
                             img(src="../assets/images/SuperSale.png", alt="Super sale")
                             span UP TO 75% OFF
-                            img(src="../assets/images/super-sale-img.png", alt="sale image")
-                    .products 
-                        .product__title 
-                            ol.title__list 
-                                li.title__item
-                                    a.title__link(href="#") All plants 
-                                li.title__item
-                                    a.title__link(href="#") New Arrivals
-                                li.title__item
-                                    a.title__link(href="#") Sale 
-                            .short__by 
-                                .title Short by: 
-                                select#sort(name="sort") 
-                                    option(value="defaul_sorting") Default sorting
-                                    option(value="defaul_sorting") Default sorting
-                                    option(value="defaul_sorting") Default sorting
+                            img.super-sale-img(src="../assets/images/super-sale-img.png", alt="sale image")
+                    //- .products 
+                    //-     .product__title 
+                    //-         ol.title__list 
+                    //-             li.title__item
+                    //-                 a.title__link(href="#") All plants 
+                    //-             li.title__item
+                    //-                 a.title__link(href="#") New Arrivals
+                    //-             li.title__item
+                    //-                 a.title__link(href="#") Sale 
+                    //-         .short__by 
+                    //-             .title Short by: 
+                    //-             select#sort(name="sort") 
+                    //-                 option(value="defaul_sorting") Default sorting
+                    //-                 option(value="defaul_sorting") Default sorting
+                    //-                 option(value="defaul_sorting") Default sorting
                             
                                 

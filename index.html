@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="../assets/css/main.css">
+    <script defer src="./assets/js/script.js"> </script>
     <title>Greenshop </title>
   </head>
   <body> 
@@ -55,40 +56,26 @@
               <li class="list__item"> <a class="list__link" href="#">gardening plants <span>(13)</span></a></li>
               <li class="list__item"> <a class="list__link" href="#">accessories <span>(18)</span></a></li>
             </ol>
+            <h4 class="price__title">Price range </h4>
             <div class="price__range"> 
-              <h4 class="price__title">Price range </h4>
               <div class="slider"> 
                 <div class="progress"></div>
               </div>
               <div class="range__input"> 
-                <input class="minInput" type="range" min="1000" max="2000" value="1200">
-                <input class="maxInput" type="range" min="1000" max="2000" value="1800">
+                <input class="minInput" type="range" min="0" max="1900" value="0">
+                <input class="maxInput" type="range" min="0" max="1900" value="1230">
               </div>
-              <p class="price">$<span class="minPrice">39 - $<span class="maxPrice">1230</span></span></p><a class="filter__btn" href="#">Filter </a>
+              <p class="price"> <span class="spanPrice">$ 
+                  <input class="input-min" type="text" value="0" disabled>
+                  <input class="input-max" type="text" value="1230" disabled></span><a class="filter__btn" href="#">Filter </a></p>
             </div>
+            <h4 class="size__title">size</h4>
             <ol class="size">
               <li class="size__item"> <a class="size__link" href="#">Small    <span>(119)</span></a></li>
               <li class="size__item"> <a class="size__link" href="#">Medium    <span>(86)</span></a></li>
               <li class="size__item"> <a class="size__link" href="#">Large    <span>(78)</span></a></li>
             </ol>
-            <div class="super__sale">   <img src="../assets/images/SuperSale.png" alt="Super sale"><span>UP TO 75% OFF</span><img src="../assets/images/super-sale-img.png" alt="sale image"></div>
-          </div>
-          <div class="products"> 
-            <div class="product__title"> 
-              <ol class="title__list"> 
-                <li class="title__item"><a class="title__link" href="#">All plants </a></li>
-                <li class="title__item"><a class="title__link" href="#">New Arrivals</a></li>
-                <li class="title__item"><a class="title__link" href="#">Sale </a></li>
-              </ol>
-              <div class="short__by"> 
-                <div class="title">Short by: </div>
-                <select id="sort" name="sort"> 
-                  <option value="defaul_sorting">Default sorting</option>
-                  <option value="defaul_sorting">Default sorting</option>
-                  <option value="defaul_sorting">Default sorting</option>
-                </select>
-              </div>
-            </div>
+            <div class="super__sale">   <img src="../assets/images/SuperSale.png" alt="Super sale"><span>UP TO 75% OFF</span><img class="super-sale-img" src="../assets/images/super-sale-img.png" alt="sale image"></div>
           </div>
         </div>
       </section>

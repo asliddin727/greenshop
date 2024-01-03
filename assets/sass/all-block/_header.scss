@@ -23,7 +23,7 @@ $font-weights: ('extralight': 200, 'light': 300, 'regular': 400, 'medium': 500, 
                         cursor: pointer;    
                     }
                     .active{
-                        font-weight: map-get($font-weights, bold);
+                        font-weight: map-get($map: $font-weights, $key: bold);
                         border-bottom: .3rem solid $green;
                         padding: 3.3rem 0 2.5rem 0;
                     }
