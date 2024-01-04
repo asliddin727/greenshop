@@ -6,9 +6,11 @@ $font-weights: ('extralight': 200, 'light': 300, 'regular': 400, 'medium': 500, 
 .filterProduct{
     margin-top: 3rem;
     .container{
+        @include flexbox-row;
+        gap: 5rem;
         .filter{
             padding: 1.4rem 2.4rem;
-            max-width: 31rem;
+            width: 31rem;
             position: relative;
             height: fit-content;
             background-color: #FBFBFB;
@@ -185,6 +187,10 @@ $font-weights: ('extralight': 200, 'light': 300, 'regular': 400, 'medium': 500, 
                 width: 100%;
                 padding: 0 2rem;
                 background-image: linear-gradient(45deg, #46A35955, #46A35928);
+                img:first-child{
+                    width: 21rem;
+                    margin: 0 2.2rem;
+                }
                 span{
                     margin-top: 1.1rem;
                     margin-bottom: .6rem;
@@ -195,7 +201,56 @@ $font-weights: ('extralight': 200, 'light': 300, 'regular': 400, 'medium': 500, 
                     color: #3D3D3D;
                 }
                 .super-sale-img{
-                    width: 37rem;
+                    width: 30rem;
+                }
+            }
+        }
+        .products{
+            width: 100%;
+            .product__title{
+                @include flexbox-row;
+                justify-content: space-between;
+                align-items: center;
+                .title__list{
+                    @include flexbox-row;
+                    gap: 4rem;
+                    .title__item{
+                        padding-bottom: .7rem;
+                        .title__link{
+                            font-size: 1.5rem;
+                            font-weight: map-get($map: $font-weights, $key: regular);
+                            line-height: 1.6rem;
+                            color: #3D3D3D;
+                        }
+                    }
+                    .active{
+                        border-bottom: .3rem solid $green;
+                        .title__link{
+                            color: $green;
+                            font-weight: map-get($map: $font-weights, $key: bold);
+                        }
+                    }
+                    .title__item:hover{
+                        @extend .active;
+                    }
+                }
+                .short__by{
+                    @include flexbox-row;
+                    align-items: center;
+                    .title{
+                        font-size: 1.5rem;
+                        font-weight: map-get($map: $font-weights, $key: regular);
+                        color: #3D3D3D;
+                        line-height: 1.6rem;
+                    }
+                    #sort{
+                        border: none;
+                        outline: none;
+                        font-size: 1.5rem;
+                        line-height: 1.6rem;
+                        font-weight: map-get($map: $font-weights, $key: regular);
+                        color: #3D3D3D;
+                    }
                 }
             }
         }
