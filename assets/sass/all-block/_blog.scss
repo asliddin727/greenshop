@@ -75,3 +75,10 @@ $font-weights: ('extralight': 200, 'light': 300, 'regular': 400, 'medium': 500, 
         }
     }
 }
+
+
+@media only screen and (max-width: 768px){
+    .blog{
+        display: none;
+    }
+}

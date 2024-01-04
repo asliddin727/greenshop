@@ -1,2 +1,83 @@
 footer.footer 
     .container
+        .footer__top 
+            ol.list 
+                li.list__item 
+                    img(src="../assets/images/garden-care-top.png", alt="Garden")
+                    img(src="../assets/images/garden-care-main.png", alt="Garden")
+                    h4 Garden Care
+                    p We are an online plant shop offering a wide range of cheap and trendy plants.
+                li.list__item 
+                    img(src="../assets/images/plant-renovation.png", alt="Renovation")
+                    h4 Plant Renovation
+                    p We are an online plant shop offering a wide range of cheap and trendy plants.
+                li.list__item 
+                    img(src="../assets/images/watering-graden.png", alt="Garden")
+                    h4 Watering Graden
+                    p We are an online plant shop offering a wide range of cheap and trendy plants.
+            .email
+                h4 Would you like to join newsletters?
+                form(action="/") 
+                    input#email(type="email", placeholder="enter your email address...")
+                    input#email-btn(type="submit", value="join")
+                p We usually post offers and challenges in newsletter. We’re your online houseplant destination. We offer a wide range of houseplants and accessories shipped directly from our (green)house to yours! 
+        .footer__main
+            img.logo(src="../assets/images/icons/logo.svg")
+            a.address(href="#") 
+                i.fa-solid.fa-location-dot
+                span 70 West Buckingham Ave. Farmingdale, NY 11735
+            a.email(href="#")
+                i.fa-regular.fa-envelope 
+                span contact@greenshop.com
+            a.phone(href="#")
+                i.fa-solid.fa-phone-volume
+                span +88 01911 717 490
+        .footer__bottom
+            ol.list
+                li.list__item
+                    h4 My Account
+                    a(href="#") My Account
+                    a(href="#") Our stores
+                    a(href="#") Contact us 
+                    a(href="#") Career
+                    a(href="#") Specials
+                li.list__item
+                    h4 Help & Guide
+                    a(href="#") Help Center
+                    a(href="#") How to Buy
+                    a(href="#") Shipping & Delivery 
+                    a(href="#") Product Policy
+                    a(href="#") How to Return
+                li.list__item
+                    h4 Categories
+                    a(href="#") House Plants
+                    a(href="#") Potter Plants
+                    a(href="#") Seeds 
+                    a(href="#") Small Plants
+                    a(href="#") Accessories
+            .social-media 
+                h4 Social Media
+                #social-media
+                    a(href="#") 
+                        i.fa-brands.fa-facebook-f
+                    a(href="#") 
+                        i.fa-brands.fa-instagram
+                    a(href="#") 
+                        i.fa-brands.fa-twitter
+                    a(href="#") 
+                        i.fa-brands.fa-linkedin-in
+                    a(href="#") 
+                        i.fa-brands.fa-youtube
+                h4.accept We accept
+                .finance 
+                    a(href="#")
+                        i.fa-brands.fa-cc-paypal
+                    a(href="#")
+                        i.fa-brands.fa-cc-mastercard
+                    a(href="#")
+                        i.fa-brands.fa-cc-visa
+                    a(href="#")
+                        img(src="../assets/images/icons/American-Express-icon.png", alt="American Express")
+        .copyright 
+            span © 2021 GreenShop. All Rights Reserved.
+                

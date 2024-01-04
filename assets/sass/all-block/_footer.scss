@@ -1,0 +1,233 @@
+@use "sass:map";
+
+$font-weights: ('extralight': 200, 'light': 300, 'regular': 400, 'medium': 500, 'semibold': 600, 'bold': 700, 'extrabold': 800, 'black': 900);
+
+.footer{
+    .container{
+        background-color: #FBFBFB;
+        .footer__top{
+            padding: 2.5rem;
+            @include flexbox-row;
+            margin-bottom: 2.3rem;
+            .list{
+                @include flexbox-row;
+                align-items: center;
+                gap: 3.4rem;
+                .list__item{
+                    @include flexbox-row;
+                    flex-direction: column;
+                    width: 23rem;
+                    border-right: .1rem solid #eee;
+                    padding-right: 3.4rem;
+                    img{
+                        position: relative;
+                        width: 5.5rem;
+                    }
+                    img::before{
+                        content: '';
+                        left: 0;
+                        width: 7.4rem;
+                        height: 7.4rem;
+                        border-radius: 50%;
+                        background-color: #46A35935;
+                        z-index: 1;
+                    }
+                    h4{
+                        margin-top: 1.7rem;
+                        font-size: 1.4rem;
+                        font-weight: map-get($map: $font-weights, $key: bold);
+                        line-height: 1.6rem;
+                        color: #3d3d3d;
+                        margin-bottom: .9rem;
+                    }
+                    p{
+                        font-size: 1.4rem;
+                        font-weight: map-get($map: $font-weights, $key: regular);
+                        line-height: 2.2rem;
+                        color: #727272;
+                    }
+                }
+                .list__item:last-child{
+                    border-right: none;
+                }
+            }
+            .email{
+                h4{
+                    font-size: 1.8rem;
+                    font-weight: map-get($map: $font-weights, $key: bold);
+                    line-height: 1.6rem;
+                    color: #3d3d3d;
+                    margin-bottom: 1.8rem;
+                }
+                form{
+                    @include flexbox-row;
+                    align-items: center;
+                    margin-bottom: 1.7rem;
+                    input{
+                        border: none;
+                        outline: none;
+                    }
+                    #email[placeholder]{
+                        color: #3d3d3d;
+                        text-transform: lowercase;
+                        padding: 1.2rem;
+                        width: 27rem;
+                        border-radius: .6rem 0 0 .6rem;
+                        font-size: 1.4rem;
+                        font-weight: map-get($map: $font-weights, $key: regular);
+                        line-height: 1.6rem;
+                    }
+                    #email-btn{
+                        width: 8.5rem;
+                        height: 4rem;
+                        color: #fff;
+                        background-color: $green;
+                        padding: 1.2rem;
+                        font-size: 1.8rem;
+                        font-weight: map-get($map: $font-weights, $key: bold);
+                        line-height: 1.6rem;
+                        border-radius: 0 .6rem .6rem 0;
+                        text-transform: capitalize;
+                    }
+                }
+                p{
+                    width: 37rem;
+                    font-size: 1.3rem;
+                    font-weight: map-get($map: $font-weights, $key: regular);
+                    line-height: 2.2rem;
+                    color: #727272;
+                }
+            }
+        }
+        .footer__main{
+            @include flexbox-row;
+            align-items: center;
+            padding-left: 2.7rem;
+            height: 8.8rem;
+            background-color: #46A35920;
+            margin-bottom: 3.3rem;
+            gap: 6rem;
+            border-top: .2rem solid $green;
+            border-bottom: .2rem solid $green;
+            .address{
+                @include flexbox-row;
+                align-items: center;
+                font-size: 1.4rem;
+                font-weight: map-get($map: $font-weights, $key: regular);
+                line-height: 2.2rem;
+                width: 22rem;
+                color: #3d3d3d;
+                i{
+                    font-size: 2rem;
+                    margin-right: 1rem;
+                    color: $green;
+                }
+            }
+            .email{
+                @extend .address;
+            }
+            .phone{
+                @extend .email;
+            }
+        }
+        .footer__bottom{
+            @include flexbox-row;
+            .list{
+                @include flexbox-row;
+                margin-left: 2.7rem;
+                gap: 12.6rem;
+                .list__item{
+                    width: 13.7rem;
+                    @include flexbox-row;
+                    flex-direction: column;
+                    gap: .8rem;
+                    h4{
+                        font-size: 1.8rem;
+                        font-weight: 1.6rem;
+                        color: #3d3d3d;
+                    }
+                    a{
+                        color: #727272;
+                        font-size: 1.4rem;
+                        font-weight: map-get($map: $font-weights, $key: regular);
+                        line-height: 3rem;
+                        transition: color .3s ease-in-out; 
+                    }
+                    a:hover{
+                        color: $green;
+                        transition: color .3s ease-in-out;
+                    }
+                }
+            }
+            .social-media{
+                @include flexbox-row;
+                flex-direction: column;
+                margin-left: 9.3rem;
+                margin-bottom: 2.7rem;
+                h4{
+                    font-size: 1.8rem;
+                    font-weight: 1.6rem;
+                    color: #3d3d3d;
+                    margin-bottom: 3.3rem;
+                }
+                #social-media{
+                    @include flexbox-row;
+                    align-items: center;
+                    gap: 2rem;
+                    i{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        font-size: 1.6rem;
+                        color: #46A3597D;
+                        background: transparent;
+                        border: .2rem solid #46A3597D;
+                        width: 3rem;
+                        height: 3rem;
+                        padding: 1rem;
+                        border-radius: .6rem;
+                        transition: background color .3s ease-in-out;
+                    }
+                    i:hover{
+                        color: #fff;
+                        border: .2rem solid #46A3597D;
+                        background: #46A3597D;
+                        transition: all .3s ease-in-out;
+                    }
+                }
+                .accept{
+                    margin-top: 3.3rem;
+                    margin-bottom: 1.3rem;
+                }
+                .finance{
+                    display: flex;
+                    align-items: center;
+                    gap: 2rem;
+                    font-size: 3rem;
+                    i{
+                        color: $green;
+                    }
+                    img{
+                        width: 8rem;
+                    }
+                }
+            }
+        }
+        .copyright{
+            font-size: 1.4rem;
+            line-height: 3rem;
+            font-weight: map-get($map: $font-weights, $key: regular);
+            text-align: center;
+            padding: 1rem 0;
+            background: #fff;
+            color: #3d3d3d;
+        }
+    }
+}
+
+
+@media only screen and (max-width: 768px){
+    .footer{
+        display: none;
+    }
+}
