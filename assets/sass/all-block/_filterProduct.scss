@@ -209,6 +209,7 @@ $font-weights: ('extralight': 200, 'light': 300, 'regular': 400, 'medium': 500, 
         .products{
             position: relative;
             width: 100%;
+            margin-bottom: 9.4rem;
             .product__title{
                 @include flexbox-row;
                 justify-content: space-between;
@@ -326,7 +327,6 @@ $font-weights: ('extralight': 200, 'light': 300, 'regular': 400, 'medium': 500, 
             .pagenation{
                 position: absolute;
                 margin-top: 9rem;
-                margin-bottom: 9.4rem;
                 right: 0;
                 @include flexbox-row;
                 align-items: center;

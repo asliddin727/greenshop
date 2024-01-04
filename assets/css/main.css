@@ -500,6 +500,7 @@
 .filterProduct .container .products {
   position: relative;
   width: 100%;
+  margin-bottom: 9.4rem;
 }
 .filterProduct .container .products .product__title {
   display: flex;
@@ -619,7 +620,6 @@
 .filterProduct .container .products .pagenation {
   position: absolute;
   margin-top: 9rem;
-  margin-bottom: 9.4rem;
   right: 0;
   display: flex;
   flex-direction: row;
@@ -650,6 +650,136 @@
   border-radius: 0.4rem;
   transition: background-color color 0.3s ease-in-out;
 }
+.product__block {
+  margin-top: 9.4rem;
+}
+.product__block .container {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+}
+.product__block .container .product__box {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  width: 58.6rem;
+  height: 25rem;
+  background-color: #FBFBFB;
+}
+.product__block .container .product__box .left img {
+  margin-top: -5rem;
+}
+.product__block .container .product__box .description {
+  margin-top: 3.7rem;
+  margin-right: 3rem;
+}
+.product__block .container .product__box .description h4 {
+  text-transform: uppercase;
+  float: right;
+  text-align: right;
+  width: 20rem;
+  font-size: 1.8rem;
+  font-weight: 900;
+  line-height: 2.4rem;
+  margin-bottom: 2rem;
+}
+.product__block .container .product__box .description p {
+  float: right;
+  font-size: 1.4rem;
+  font-weight: 400;
+  text-align: right;
+  color: #727272;
+  margin-bottom: 2rem;
+}
+.product__block .container .product__box .description .btn {
+  float: right;
+  background-color: #46A358;
+  color: #fff;
+  padding: 1rem 2rem;
+  border-radius: 0.6rem;
+  font-size: 1.4rem;
+  text-transform: capitalize;
+  font-weight: 500;
+  transition: box-shadow 0.3s ease-in-out;
+}
+.product__block .container .product__box .description .btn:hover {
+  box-shadow: 0 0 3rem #46A358;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.blog {
+  margin-top: 13.8rem;
+  margin-bottom: 10rem;
+}
+.blog .container .title {
+  text-align: center;
+  text-transform: capitalize;
+  margin-bottom: 3.5rem;
+}
+.blog .container .title h4 {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.6rem;
+  color: #3d3d3d;
+  margin-bottom: 1.5rem;
+}
+.blog .container .title p {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #727272;
+  line-height: 2.4rem;
+}
+.blog .container .card__list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 4.4rem;
+}
+.blog .container .card__list .card {
+  width: 26.8rem;
+  height: 36.7rem;
+  background-color: #FBFBFB;
+}
+.blog .container .card__list .card .desc {
+  display: flex;
+  flex-direction: row;
+  flex-direction: column;
+  background-color: #FBFBFB;
+  margin: 0.9rem 1.5rem;
+}
+.blog .container .card__list .card .desc .datetime {
+  font-size: 1.4rem;
+  color: #46A358;
+  font-weight: 500;
+  line-height: 1.6rem;
+  margin-bottom: 0.4rem;
+}
+.blog .container .card__list .card .desc h4 {
+  width: 22rem;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 2.6rem;
+}
+.blog .container .card__list .card .desc .description {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2.2rem;
+  color: #727272;
+  margin-bottom: 0.9rem;
+}
+.blog .container .card__list .card .desc .btn {
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.6rem;
+  color: #3d3d3d;
+  text-transform: capitalize;
+  transition: color 0.3s ease-in-out;
+}
+.blog .container .card__list .card .desc .btn:hover {
+  color: #46A358;
+  transition: color 0.3s ease-in-out;
+}
+
 * {
   margin: 0;
   padding: 0;
