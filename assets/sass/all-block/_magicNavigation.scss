@@ -1,0 +1,82 @@
+@use "sass:map";
+
+$font-weights: ('extralight': 200, 'light': 300, 'regular': 400, 'medium': 500, 'semibold': 600, 'bold': 700, 'extrabold': 800, 'black': 900);
+
+
+.navigation{
+    display: none;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 7rem;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 1rem;
+    ul{
+        @include flexbox-row;
+        width: 35rem;
+        .list{
+            position: relative;
+            width: 7rem;
+            height: 7rem;
+            z-index: 1;
+            a{
+                position: relative;
+                @include flexbox-row;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                width: 100%;
+                text-align: center;
+                font-weight: map-get($map: $font-weights, $key: medium);
+                .icon{
+                    position: relative;
+                    display: block;
+                    line-height: 7.5rem;
+                    font-size: 2rem;
+                    text-align: center;
+                    transition: .5s;
+                    color: #D9D9D9;
+                    img{
+                        position: relative;
+                        transform: translateY(-3.2rem);
+                        padding: 2rem;
+                        background-image: linear-gradient(to bottom, #46A358, #46A358);
+                        border-radius: 50%; 
+                        border: 1rem solid #fff;
+                        transition: .5s;
+                    }
+                    img::before{
+                        content: "";
+                        position: absolute;
+                        top: 50%;
+                        left: 2.2rem;
+                        width: 2rem;
+                        height: 2rem;
+                        background: transparent;
+                        border-top-right-radius: 2rem;
+                        box-shadow: 0 -1rem 0 0 #fff;
+                    }
+                }
+            }
+        }
+        .list.active{
+            a{
+                .icon{
+                    color: $green;
+                }
+            }
+        }
+        
+        
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .navigation{
+        display: flex;
+        position: absolute;
+        bottom: 0;
+    }   
+}
