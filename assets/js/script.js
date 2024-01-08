@@ -44,3 +44,70 @@ rangeInput.forEach(input => {
         
     });
 });
+
+
+// Shop Javascript
+
+let activePage = window.location.pathname;
+
+let activeHeader = document.querySelectorAll('.header .nav li a').forEach(link => {
+   if(link.href.includes(`${activePage}`)){
+    link.classList.add('active');
+   } 
+});
+
+// Cart
+
+let shopImgList = document.querySelectorAll('.shop-left-images li img');
+let home = document.querySelector('.home-img');
+
+shopImgList.forEach(img => {
+    img.addEventListener('click', () => {
+        document.querySelectorAll('.shop-left-images li img').forEach(oldImg => {
+            oldImg.classList.remove('active');
+        });
+        img.classList.add('active');
+        home.src = img.src;
+    });
+});
+
+// Minus And Plus Price
+
+let minusBtn = document.querySelector('.minus');
+let inputCount = document.querySelector('.count input');
+let plusBtn = document.querySelector('.plus');
+let price = document.querySelector('.price span');
+
+let s = 1;
+
+plusBtn.addEventListener('click', () => {
+    let countValue = parseInt(inputCount.value, 10);
+    let priceValue = parseInt(price.textContent, 10);
+
+    if (countValue >= s) {
+        inputCount.value = countValue + 1;
+        price.textContent = priceValue * inputCount.value;
+        minusBtn.disabled = false;
+    }
+});
+
+
+minusBtn.addEventListener('click', () => {
+    let countValue = parseInt(inputCount.value, 10);
+    let priceValue = parseInt(price.textContent, 10);
+    console.log(priceValue);
+
+    if (countValue > s) {
+        inputCount.value = countValue - 1;
+        price.textContent = priceValue / countValue;
+    } else if (countValue === s) {
+        price.textContent = priceValue;
+        minusBtn.disabled = true;
+    }
+});
+
+
+
+
+
+

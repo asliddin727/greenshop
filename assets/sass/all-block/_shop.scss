@@ -1,0 +1,256 @@
+@use "sass:map";
+
+$font-weights: ('extralight': 200, 'light': 300, 'regular': 400, 'medium': 500, 'semibold': 600, 'bold': 700, 'extrabold': 800, 'black': 900);
+
+.shop-title-list{
+    @include flexbox-row;
+    align-items: center;
+    margin-top: 3.6rem;
+    margin-bottom: 4.3rem;
+    li{
+        a{
+            color: #3D3D3D;
+            font-size: 1.5rem;
+            font-weight: map-get($map: $font-weights, $key: regular);
+            text-transform: capitalize;
+            line-height: 1.6rem;
+        }
+    }
+    li:nth-child(1) a{
+        font-weight: map-get($map: $font-weights, $key: bold);
+    }
+}
+
+.shop-main{
+    
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5.2rem;
+    .shop-left{
+        @include flexbox-row;
+        align-items: center;
+        gap: 3rem;
+        .shop-left-images{
+            @include flexbox-row;
+            justify-content: center;
+            flex-direction: column;
+            gap: 1.6rem;
+            li{
+                width: 10rem;
+                height: 10rem;
+                background-color: #FBFBFB;
+                a{
+                    img{
+                      width: 10rem;  
+                      height: 10rem;
+                    }
+                }
+            }
+            .active{
+                border: .1rem solid $green;
+            }
+            li:hover{
+                @extend .active;
+            }
+        }
+        .home-img{
+            width: 44.4rem;
+            height: 44.4rem;
+            background-color: #FBFBFB;
+            overflow: hidden;
+        }
+        .home-img::after{
+            content: "";
+            position: absolute;
+        }
+    }
+    .shop-right-desc{
+        width: 57.4rem;
+        height: 44.4rem;
+        @include flexbox-row;
+        flex-direction: column;
+        align-items: flex-start;
+        .heading{
+            font-size: 2.8rem;
+            font-weight: map-get($map: $font-weights, $key: bold);
+            color: #3D3D3D;
+            margin-bottom: 2.1rem;
+            line-height: 1.6rem;
+        }
+        .price-and-stars{
+            width: 100%;
+            @include flexbox-row;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: .03rem solid #747171;
+            padding-bottom: 1.3rem;
+            .price{
+                font-size: 2.2rem;
+                font-weight: map-get($map: $font-weights, $key: bold);
+                line-height: 1.6rem;
+                color: $green;
+            }
+            .stars{
+                margin-left: auto;
+                i{
+                    font-size: 1.5rem;
+                }
+                .fa-solid{
+                    color: #FFAC0C;
+                }
+                .fa-regular{
+                    background-color: #FBFBFB;
+                    color: #FBFBFB;
+                }
+                .desc{
+                    font-size: 1.5rem;
+                    font-weight: map-get($map: $font-weights, $key: regular);
+                    line-height: 1.6rem;
+                }
+            }
+            
+        }
+        .short-description{
+            @include flexbox-row;
+            flex-direction: column;
+            margin-bottom: 2.4rem;
+            margin-top: 2.4rem;
+            .title{
+                font-size: 1.5rem;
+                font-weight: map-get($map: $font-weights, $key: medium);
+                line-height: 1.6rem;
+                margin-bottom: 1rem;
+                color: #3D3D3D;
+            }
+            .desc{
+                font-size: 1.4rem;
+                font-weight: map-get($map: $font-weights, $key: regular);
+                line-height: 2.4rem;
+                color: #727272;
+            }
+        }
+        .size-list{
+            span{
+                font-size: 1.5rem;
+                font-weight: map-get($map: $font-weights, $key: medium);
+                line-height: 1.6rem;
+                color: #3D3D3D;
+                margin-bottom: 3rem;
+            }
+            .list{
+                display: flex;
+                align-items: center;
+                gap: 1.8rem;
+                margin-top: .3rem;
+                margin-bottom: 2.3rem;
+                li{
+                    @include flexbox-row;
+                    align-items: center;
+                    justify-content: center;
+                    width: 3rem;
+                    height: 3rem;
+                    text-align: center;
+                    border: .1rem solid #eaeaea;
+                    border-radius: 50%;
+                    padding: .5rem;
+                    a{
+                        font-size: 1.4rem;
+                        font-weight: map-get($map: $font-weights, $key: medium);
+                        line-height: 1.6rem;
+                        color: #727272;
+                    }
+                }
+                .active{
+                    border: .2rem solid $green;
+                    a{
+                        color: $green;
+                        font-size: 1.8rem;
+                        font-weight: map-get($map: $font-weights, $key: bold);
+                    }
+                }
+            }
+        }
+        .buy{
+            @include flexbox-row;
+            align-items: center;
+            margin-bottom: 2.6rem;
+            .count{
+                @include flexbox-row;
+                align-items: center;
+                .minus{
+                    width: 3.3rem;
+                    height: 3.3rem;
+                    @include flexbox-row;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 2rem;
+                    background-color: $green;
+                    color: #fff;
+                    border-radius: 50%;
+                }
+                input{
+                    border: none;
+                    outline: none;
+                    width: 5rem;
+                    text-align: center;
+                    font-size: 2rem;
+                    font-weight: map-get($map: $font-weights, $key: regular);
+                    line-height: 1rem;
+                    color: #3D3D3D;
+                }
+                .plus{
+                    @extend .minus;
+                }
+            }
+            .buy-btn{
+                font-size: 1.4rem;
+                font-weight: map-get($map: $font-weights, $key: bold);
+                line-height: 2rem;
+                color: #fff;
+                background-color: $green;
+                padding: 1.1rem 3.2rem;
+                border-radius: .6rem;
+                margin-left: 2.6rem;
+                border: .3rem solid $green;
+                text-transform: uppercase;
+            }
+            .cart-btn{
+                @extend .buy-btn;
+                margin-left: 1rem;
+                border: .2rem solid $green;
+                background-color: transparent;
+                color: $green;
+                padding: 1.1rem 2rem;
+            }
+            .like-btn{
+                @extend .cart-btn;
+                font-size: 2rem;
+            }
+        }
+        .type{
+            p{
+                font-size: 1.5rem;
+                font-weight: map-get($map: $font-weights, $key: light);
+                line-height: 2.6rem;
+                color: #a5a5a5;
+
+                span{
+                    font-weight: map-get($map: $font-weights, $key: regular);
+                    color: #727272;
+                }
+            }
+        }
+        .share{
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            font-size: 1.5rem;
+            font-weight: map-get($map: $font-weights, $key: medium);
+            line-height: 1.6rem;
+            color: #3D3D3D;
+            a{
+                color: #3d3d3d;
+            }
+        }
+    }
+}

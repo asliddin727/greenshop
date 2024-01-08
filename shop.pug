@@ -1,0 +1,116 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        //- FONTAWESOME CSS
+        link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css")
+        //- CSS STYLE
+        link(rel="stylesheet", href="../assets/css/main.css")
+        //- JAVASCRIPT 
+        script(defer, src="./assets/js/script.js") 
+        title Greenshop 
+    body
+
+        include ./components/header.pug
+
+        main.main 
+            .container
+                //- shop title
+            
+                ol.shop-title-list
+                    each item in [{'home': 'index.html'}, {' / shop': 'shop.html'}]
+                        li
+                            a(href=item[Object.keys(item)[0]])= Object.keys(item)[0]
+
+
+                .shop-main
+                    .shop-left 
+                        ol.shop-left-images 
+                            li 
+                                a(href="#")
+                                    img(src="../assets/images/plant-8.png", alt="") 
+                            li 
+                                a(href="#")
+                                    img(src="../assets/images/plant-1.png", alt="")
+                            li 
+                                a(href="#")
+                                    img(src="../assets/images/plant-8.png", alt="")
+                            li 
+                                a(href="#")
+                                    img(src="../assets/images/plant-1.png", alt="")
+
+                        img.home-img(src="../assets/images/plant-1.png", alt="Plant image")
+
+                    .shop-right-desc 
+                        h4.heading Barberton Daisy
+                        p.price-and-stars 
+                            span.price $ 
+                                span 119
+                                    span .00
+                            span.stars  
+                                i.fa-solid.fa-star
+                                i.fa-solid.fa-star
+                                i.fa-solid.fa-star
+                                i.fa-solid.fa-star
+                                i.fa-regular.fa-star
+                                span.desc 19 Customer Review
+                        p.short-description
+                            span.title Short Description:
+                            span.desc The ceramic cylinder planters come with a wooden stand to help elevate your plants off the ground. The ceramic cylinder planters come with a wooden stand to help elevate your plants off the ground. 
+                        .size-list
+                            span Size:
+                            ol.list 
+                                li.active
+                                    a(href="#") S
+                                li  
+                                    a(href="#") M 
+                                li
+                                    a(href="#") L  
+                                li
+                                    a(href="#") XL 
+                        .buy 
+                            span.count 
+                                a.minus(href="#") - 
+                                input(type="text", value=1) 
+                                a.plus(href="#") +
+                            a.buy-btn(href="#") buy now 
+                            a.cart-btn(href="#") add to cart 
+                            a.like-btn(href="#") 
+                                i.fa-regular.fa-heart 
+                        .type 
+                            p SKU: 
+                                span 1995751877966
+                            p Categories: 
+                                span Potter Plants
+                            p Tags:  
+                                span Home, Garden, Plants
+                        .share
+                            span Share this products:
+                            a(href="#") 
+                                i.fa-brands.fa-facebook-f
+                            a(href="#") 
+                                i.fa-brands.fa-twitter
+                            a(href="#") 
+                                i.fa-brands.fa-linkedin-in
+                            a(href="#")
+                                i.fa-regular.fa-envelope 
+                
+                .shop-bottom 
+                    ol.title 
+                        li 
+                            a(href="#") Product Description
+                        li 
+                            a(href="#") Reviews (19)
+                    p The ceramic cylinder planters come with a wooden stand to help elevate your plants off the ground. The ceramic cylinder planters come with a wooden stand to help elevate your plants off the ground. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla augue nec est tristique auctor. Donec non est at libero vulputate rutrum. Morbi ornare lectus quis justo gravida semper. Nulla tellus mi, vulputate adipiscing cursus eu, suscipit id nulla.
+                        span Pellentesque aliquet, sem eget laoreet ultrices, ipsum metus feugiat sem, quis fermentum turpis eros eget velit. Donec ac tempus ante. Fusce ultricies massa massa. Fusce aliquam, purus eget sagittis vulputate, sapien libero hendrerit est, sed commodo augue nisi non neque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor, lorem et placerat vestibulum, metus nisi posuere nisl, in accumsan elit odio quis mi. Cras neque metus, consequat et blandit et, luctus a nunc. Etiam gravida vehicula tellus, in imperdiet ligula euismod eget. The ceramic cylinder planters come with a wooden stand to help elevate your plants off the ground.  
+                    h4 Living Room:
+                    p The ceramic cylinder planters come with a wooden stand to help elevate your plants off the ground. The ceramic cylinder planters come with a wooden stand to help elevate your plants off the ground. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    h4 Dining Room:
+                    p The benefits of houseplants are endless. In addition to cleaning the air of harmful toxins, they can help to improve your mood, reduce stress and provide you with better sleep. Fill every room of your home with houseplants and their restorative qualities will improve your life.
+                    h4 Office:
+                    p The ceramic cylinder planters come with a wooden stand to help elevate your plants off the ground. The ceramic cylinder planters come with a wooden stand to help elevate your plants off the ground. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+        include ./components/footer.pug
+
+        

@@ -13,6 +13,7 @@ html{
 @media only screen and (max-width: 768px){
     html{
         font-size: 62.5%;
+        overflow: hidden;
     }
 
     body{
@@ -22,6 +23,7 @@ html{
         flex-direction: column;
         width: 100%;
         height: 100vh;
+        overflow: hidden;
     }
 }
 
