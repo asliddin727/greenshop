@@ -25,7 +25,7 @@
   color: #3D3D3D;
   cursor: pointer;
 }
-.header .container nav .nav .nav__item .active, .header .container nav .nav .nav__item .shop-main .shop-left .shop-left-images li:hover, .shop-main .shop-left .shop-left-images .header .container nav .nav .nav__item li:hover, .header .filterProduct .container nav .nav .nav__item .products .pagenation a:hover, .filterProduct .header .container nav .nav .nav__item .products .pagenation a:hover, .header .filterProduct .container .products .pagenation nav .nav .nav__item a:hover, .filterProduct .header .container .products .pagenation nav .nav .nav__item a:hover, .header .filterProduct .container nav .nav .nav__item .products .product__title .title__list .title__item:hover, .filterProduct .header .container nav .nav .nav__item .products .product__title .title__list .title__item:hover, .header .filterProduct .container .products .product__title .title__list nav .nav .nav__item .title__item:hover, .filterProduct .header .container .products .product__title .title__list nav .nav .nav__item .title__item:hover, .header .filterProduct .container nav .nav .nav__item .filter .product_list .list__item .list__link:hover, .filterProduct .header .container nav .nav .nav__item .filter .product_list .list__item .list__link:hover, .header .filterProduct .container .filter .product_list .list__item nav .nav .nav__item .list__link:hover, .filterProduct .header .container .filter .product_list .list__item nav .nav .nav__item .list__link:hover, .header .container nav .nav .nav__item .nav__link:hover {
+.header .container nav .nav .nav__item .active, .header .container nav .nav .nav__item .shop-bottom .title li:hover, .shop-bottom .title .header .container nav .nav .nav__item li:hover, .header .container nav .nav .nav__item .shop-main .shop-left .shop-left-images li:hover, .shop-main .shop-left .shop-left-images .header .container nav .nav .nav__item li:hover, .header .filterProduct .container nav .nav .nav__item .products .pagenation a:hover, .filterProduct .header .container nav .nav .nav__item .products .pagenation a:hover, .header .filterProduct .container .products .pagenation nav .nav .nav__item a:hover, .filterProduct .header .container .products .pagenation nav .nav .nav__item a:hover, .header .filterProduct .container nav .nav .nav__item .products .product__title .title__list .title__item:hover, .filterProduct .header .container nav .nav .nav__item .products .product__title .title__list .title__item:hover, .header .filterProduct .container .products .product__title .title__list nav .nav .nav__item .title__item:hover, .filterProduct .header .container .products .product__title .title__list nav .nav .nav__item .title__item:hover, .header .filterProduct .container nav .nav .nav__item .filter .product_list .list__item .list__link:hover, .filterProduct .header .container nav .nav .nav__item .filter .product_list .list__item .list__link:hover, .header .filterProduct .container .filter .product_list .list__item nav .nav .nav__item .list__link:hover, .filterProduct .header .container .filter .product_list .list__item nav .nav .nav__item .list__link:hover, .header .container nav .nav .nav__item .nav__link:hover {
   font-weight: 700;
   border-bottom: 0.3rem solid #46A358;
   padding: 3.3rem 0 2.5rem 0;
@@ -337,7 +337,7 @@
   color: #3d3d3d;
   margin-bottom: 0.9rem;
 }
-.footer .container .footer__top .list .list__item p {
+.footer .container .footer__top .list .list__item p, .footer .container .footer__top .list .list__item .shop-bottom .two, .shop-bottom .footer .container .footer__top .list .list__item .two {
   font-size: 1.4rem;
   font-weight: 400;
   line-height: 2.2rem;
@@ -385,7 +385,7 @@
   border-radius: 0 0.6rem 0.6rem 0;
   text-transform: capitalize;
 }
-.footer .container .footer__top .email p, .footer .container .footer__top .footer__main .phone p, .footer .container .footer__main .footer__top .phone p {
+.footer .container .footer__top .email p, .footer .container .footer__top .email .shop-bottom .two, .shop-bottom .footer .container .footer__top .email .two, .footer .container .footer__top .footer__main .phone p, .footer .container .footer__top .footer__main .phone .shop-bottom .two, .shop-bottom .footer .container .footer__top .footer__main .phone .two, .footer .container .footer__main .footer__top .phone p, .footer .container .footer__main .footer__top .phone .shop-bottom .two, .shop-bottom .footer .container .footer__main .footer__top .phone .two {
   width: 37rem;
   font-size: 1.3rem;
   font-weight: 400;
@@ -752,10 +752,10 @@
   line-height: 1.6rem;
   color: #3D3D3D;
 }
-.filterProduct .container .products .product__title .title__list .active, .filterProduct .container .products .product__title .title__list .shop-main .shop-left .shop-left-images li:hover, .shop-main .shop-left .shop-left-images .filterProduct .container .products .product__title .title__list li:hover, .filterProduct .container .products .product__title .title__list .pagenation a:hover, .filterProduct .container .products .pagenation .product__title .title__list a:hover, .filterProduct .container .products .product__title .title__list .title__item:hover, .filterProduct .header .container .products .product__title .title__list nav .nav .nav__item .nav__link:hover, .header .filterProduct .container .products .product__title .title__list nav .nav .nav__item .nav__link:hover, .filterProduct .header .container nav .nav .nav__item .products .product__title .title__list .nav__link:hover, .header .filterProduct .container nav .nav .nav__item .products .product__title .title__list .nav__link:hover, .filterProduct .container .products .product__title .title__list .filter .product_list .list__item .list__link:hover, .filterProduct .container .filter .product_list .list__item .products .product__title .title__list .list__link:hover {
+.filterProduct .container .products .product__title .title__list .active, .filterProduct .container .products .product__title .title__list .shop-bottom .title li:hover, .shop-bottom .title .filterProduct .container .products .product__title .title__list li:hover, .filterProduct .container .products .product__title .title__list .shop-main .shop-left .shop-left-images li:hover, .shop-main .shop-left .shop-left-images .filterProduct .container .products .product__title .title__list li:hover, .filterProduct .container .products .product__title .title__list .pagenation a:hover, .filterProduct .container .products .pagenation .product__title .title__list a:hover, .filterProduct .container .products .product__title .title__list .title__item:hover, .filterProduct .header .container .products .product__title .title__list nav .nav .nav__item .nav__link:hover, .header .filterProduct .container .products .product__title .title__list nav .nav .nav__item .nav__link:hover, .filterProduct .header .container nav .nav .nav__item .products .product__title .title__list .nav__link:hover, .header .filterProduct .container nav .nav .nav__item .products .product__title .title__list .nav__link:hover, .filterProduct .container .products .product__title .title__list .filter .product_list .list__item .list__link:hover, .filterProduct .container .filter .product_list .list__item .products .product__title .title__list .list__link:hover {
   border-bottom: 0.3rem solid #46A358;
 }
-.filterProduct .container .products .product__title .title__list .active .title__link, .filterProduct .container .products .product__title .title__list .shop-main .shop-left .shop-left-images li:hover .title__link, .shop-main .shop-left .shop-left-images .filterProduct .container .products .product__title .title__list li:hover .title__link, .filterProduct .container .products .product__title .title__list .pagenation a:hover .title__link, .filterProduct .container .products .pagenation .product__title .title__list a:hover .title__link, .filterProduct .container .products .product__title .title__list .title__item:hover .title__link, .filterProduct .header .container .products .product__title .title__list nav .nav .nav__item .nav__link:hover .title__link, .header .filterProduct .container .products .product__title .title__list nav .nav .nav__item .nav__link:hover .title__link, .filterProduct .header .container nav .nav .nav__item .products .product__title .title__list .nav__link:hover .title__link, .header .filterProduct .container nav .nav .nav__item .products .product__title .title__list .nav__link:hover .title__link, .filterProduct .container .products .product__title .title__list .filter .product_list .list__item .list__link:hover .title__link, .filterProduct .container .filter .product_list .list__item .products .product__title .title__list .list__link:hover .title__link {
+.filterProduct .container .products .product__title .title__list .active .title__link, .filterProduct .container .products .product__title .title__list .shop-bottom .title li:hover .title__link, .shop-bottom .title .filterProduct .container .products .product__title .title__list li:hover .title__link, .filterProduct .container .products .product__title .title__list .shop-main .shop-left .shop-left-images li:hover .title__link, .shop-main .shop-left .shop-left-images .filterProduct .container .products .product__title .title__list li:hover .title__link, .filterProduct .container .products .product__title .title__list .pagenation a:hover .title__link, .filterProduct .container .products .pagenation .product__title .title__list a:hover .title__link, .filterProduct .container .products .product__title .title__list .title__item:hover .title__link, .filterProduct .header .container .products .product__title .title__list nav .nav .nav__item .nav__link:hover .title__link, .header .filterProduct .container .products .product__title .title__list nav .nav .nav__item .nav__link:hover .title__link, .filterProduct .header .container nav .nav .nav__item .products .product__title .title__list .nav__link:hover .title__link, .header .filterProduct .container nav .nav .nav__item .products .product__title .title__list .nav__link:hover .title__link, .filterProduct .container .products .product__title .title__list .filter .product_list .list__item .list__link:hover .title__link, .filterProduct .container .filter .product_list .list__item .products .product__title .title__list .list__link:hover .title__link {
   color: #46A358;
   font-weight: 700;
 }
@@ -870,7 +870,7 @@
   cursor: pointer;
   transition: background-color color 0.3s ease-in-out;
 }
-.filterProduct .container .products .pagenation .active, .filterProduct .container .products .pagenation .shop-main .shop-left .shop-left-images li:hover, .shop-main .shop-left .shop-left-images .filterProduct .container .products .pagenation li:hover, .filterProduct .container .products .pagenation a:hover, .filterProduct .header .container .products .pagenation nav .nav .nav__item .nav__link:hover, .header .filterProduct .container .products .pagenation nav .nav .nav__item .nav__link:hover, .filterProduct .header .container nav .nav .nav__item .products .pagenation .nav__link:hover, .header .filterProduct .container nav .nav .nav__item .products .pagenation .nav__link:hover, .filterProduct .container .products .pagenation .filter .product_list .list__item .list__link:hover, .filterProduct .container .filter .product_list .list__item .products .pagenation .list__link:hover, .filterProduct .container .products .pagenation .product__title .title__list .title__item:hover, .filterProduct .container .products .product__title .title__list .pagenation .title__item:hover {
+.filterProduct .container .products .pagenation .active, .filterProduct .container .products .pagenation .shop-bottom .title li:hover, .shop-bottom .title .filterProduct .container .products .pagenation li:hover, .filterProduct .container .products .pagenation .shop-main .shop-left .shop-left-images li:hover, .shop-main .shop-left .shop-left-images .filterProduct .container .products .pagenation li:hover, .filterProduct .container .products .pagenation a:hover, .filterProduct .header .container .products .pagenation nav .nav .nav__item .nav__link:hover, .header .filterProduct .container .products .pagenation nav .nav .nav__item .nav__link:hover, .filterProduct .header .container nav .nav .nav__item .products .pagenation .nav__link:hover, .header .filterProduct .container nav .nav .nav__item .products .pagenation .nav__link:hover, .filterProduct .container .products .pagenation .filter .product_list .list__item .list__link:hover, .filterProduct .container .filter .product_list .list__item .products .pagenation .list__link:hover, .filterProduct .container .products .pagenation .product__title .title__list .title__item:hover, .filterProduct .container .products .product__title .title__list .pagenation .title__item:hover {
   font-weight: 700;
   color: #fff;
   background-color: #46A358;
@@ -917,7 +917,7 @@
   line-height: 2.4rem;
   margin-bottom: 2rem;
 }
-.product__block .container .product__box .description p {
+.product__block .container .product__box .description p, .product__block .container .product__box .description .shop-bottom .two, .shop-bottom .product__block .container .product__box .description .two {
   float: right;
   font-size: 1.4rem;
   font-weight: 400;
@@ -962,7 +962,7 @@
   color: #3d3d3d;
   margin-bottom: 1.5rem;
 }
-.blog .container .title p {
+.blog .container .title p, .blog .container .title .shop-bottom .two, .shop-bottom .blog .container .title .two {
   font-size: 1.4rem;
   font-weight: 400;
   color: #727272;
@@ -1086,7 +1086,7 @@
   border-top-right-radius: 2rem;
   box-shadow: 0 -1rem 0 0 #fff;
 }
-.navigation ul .list.active a .icon, .navigation ul .shop-main .shop-left .shop-left-images li.list:hover a .icon, .shop-main .shop-left .shop-left-images .navigation ul li.list:hover a .icon, .navigation ul .header .container nav .nav .nav__item .list.nav__link:hover a .icon, .header .container nav .nav .nav__item .navigation ul .list.nav__link:hover a .icon, .navigation ul .filterProduct .container .filter .product_list .list__item .list.list__link:hover a .icon, .filterProduct .container .filter .product_list .list__item .navigation ul .list.list__link:hover a .icon, .navigation ul .filterProduct .container .products .product__title .title__list .list.title__item:hover a .icon, .filterProduct .container .products .product__title .title__list .navigation ul .list.title__item:hover a .icon, .navigation ul .filterProduct .container .products .pagenation a.list:hover a .icon, .filterProduct .container .products .pagenation .navigation ul a.list:hover a .icon {
+.navigation ul .list.active a .icon, .navigation ul .shop-bottom .title li.list:hover a .icon, .shop-bottom .title .navigation ul li.list:hover a .icon, .navigation ul .shop-main .shop-left .shop-left-images li.list:hover a .icon, .shop-main .shop-left .shop-left-images .navigation ul li.list:hover a .icon, .navigation ul .header .container nav .nav .nav__item .list.nav__link:hover a .icon, .header .container nav .nav .nav__item .navigation ul .list.nav__link:hover a .icon, .navigation ul .filterProduct .container .filter .product_list .list__item .list.list__link:hover a .icon, .filterProduct .container .filter .product_list .list__item .navigation ul .list.list__link:hover a .icon, .navigation ul .filterProduct .container .products .product__title .title__list .list.title__item:hover a .icon, .filterProduct .container .products .product__title .title__list .navigation ul .list.title__item:hover a .icon, .navigation ul .filterProduct .container .products .pagenation a.list:hover a .icon, .filterProduct .container .products .pagenation .navigation ul a.list:hover a .icon {
   color: #46A358;
 }
 
@@ -1119,6 +1119,7 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 5.2rem;
+  margin-bottom: 9.2rem;
 }
 .shop-main .shop-left {
   display: flex;
@@ -1255,10 +1256,10 @@
   line-height: 1.6rem;
   color: #727272;
 }
-.shop-main .shop-right-desc .size-list .list .active, .shop-main .shop-right-desc .size-list .list .header .container nav .nav .nav__item .nav__link:hover, .header .container nav .nav .nav__item .shop-main .shop-right-desc .size-list .list .nav__link:hover, .shop-main .shop-right-desc .size-list .list .filterProduct .container .filter .product_list .list__item .list__link:hover, .filterProduct .container .filter .product_list .list__item .shop-main .shop-right-desc .size-list .list .list__link:hover, .shop-main .shop-right-desc .size-list .list .filterProduct .container .products .product__title .title__list .title__item:hover, .filterProduct .container .products .product__title .title__list .shop-main .shop-right-desc .size-list .list .title__item:hover, .shop-main .shop-right-desc .size-list .list .filterProduct .container .products .pagenation a:hover, .filterProduct .container .products .pagenation .shop-main .shop-right-desc .size-list .list a:hover, .shop-main .shop-right-desc .size-list .list .shop-left .shop-left-images li:hover, .shop-main .shop-left .shop-left-images .shop-right-desc .size-list .list li:hover {
+.shop-main .shop-right-desc .size-list .list .active, .shop-main .shop-right-desc .size-list .list .shop-bottom .title li:hover, .shop-bottom .title .shop-main .shop-right-desc .size-list .list li:hover, .shop-main .shop-right-desc .size-list .list .header .container nav .nav .nav__item .nav__link:hover, .header .container nav .nav .nav__item .shop-main .shop-right-desc .size-list .list .nav__link:hover, .shop-main .shop-right-desc .size-list .list .filterProduct .container .filter .product_list .list__item .list__link:hover, .filterProduct .container .filter .product_list .list__item .shop-main .shop-right-desc .size-list .list .list__link:hover, .shop-main .shop-right-desc .size-list .list .filterProduct .container .products .product__title .title__list .title__item:hover, .filterProduct .container .products .product__title .title__list .shop-main .shop-right-desc .size-list .list .title__item:hover, .shop-main .shop-right-desc .size-list .list .filterProduct .container .products .pagenation a:hover, .filterProduct .container .products .pagenation .shop-main .shop-right-desc .size-list .list a:hover, .shop-main .shop-right-desc .size-list .list .shop-left .shop-left-images li:hover, .shop-main .shop-left .shop-left-images .shop-right-desc .size-list .list li:hover {
   border: 0.2rem solid #46A358;
 }
-.shop-main .shop-right-desc .size-list .list .active a, .shop-main .shop-right-desc .size-list .list .header .container nav .nav .nav__item .nav__link:hover a, .header .container nav .nav .nav__item .shop-main .shop-right-desc .size-list .list .nav__link:hover a, .shop-main .shop-right-desc .size-list .list .filterProduct .container .filter .product_list .list__item .list__link:hover a, .filterProduct .container .filter .product_list .list__item .shop-main .shop-right-desc .size-list .list .list__link:hover a, .shop-main .shop-right-desc .size-list .list .filterProduct .container .products .product__title .title__list .title__item:hover a, .filterProduct .container .products .product__title .title__list .shop-main .shop-right-desc .size-list .list .title__item:hover a, .shop-main .shop-right-desc .size-list .list .filterProduct .container .products .pagenation a:hover a, .filterProduct .container .products .pagenation .shop-main .shop-right-desc .size-list .list a:hover a, .shop-main .shop-right-desc .size-list .list .shop-left .shop-left-images li:hover a, .shop-main .shop-left .shop-left-images .shop-right-desc .size-list .list li:hover a {
+.shop-main .shop-right-desc .size-list .list .active a, .shop-main .shop-right-desc .size-list .list .shop-bottom .title li:hover a, .shop-bottom .title .shop-main .shop-right-desc .size-list .list li:hover a, .shop-main .shop-right-desc .size-list .list .header .container nav .nav .nav__item .nav__link:hover a, .header .container nav .nav .nav__item .shop-main .shop-right-desc .size-list .list .nav__link:hover a, .shop-main .shop-right-desc .size-list .list .filterProduct .container .filter .product_list .list__item .list__link:hover a, .filterProduct .container .filter .product_list .list__item .shop-main .shop-right-desc .size-list .list .list__link:hover a, .shop-main .shop-right-desc .size-list .list .filterProduct .container .products .product__title .title__list .title__item:hover a, .filterProduct .container .products .product__title .title__list .shop-main .shop-right-desc .size-list .list .title__item:hover a, .shop-main .shop-right-desc .size-list .list .filterProduct .container .products .pagenation a:hover a, .filterProduct .container .products .pagenation .shop-main .shop-right-desc .size-list .list a:hover a, .shop-main .shop-right-desc .size-list .list .shop-left .shop-left-images li:hover a, .shop-main .shop-left .shop-left-images .shop-right-desc .size-list .list li:hover a {
   color: #46A358;
   font-size: 1.8rem;
   font-weight: 700;
@@ -1318,13 +1319,13 @@
 .shop-main .shop-right-desc .buy .like-btn {
   font-size: 2rem;
 }
-.shop-main .shop-right-desc .type p {
+.shop-main .shop-right-desc .type p, .shop-main .shop-right-desc .type .shop-bottom .two, .shop-bottom .shop-main .shop-right-desc .type .two {
   font-size: 1.5rem;
   font-weight: 300;
   line-height: 2.6rem;
   color: #a5a5a5;
 }
-.shop-main .shop-right-desc .type p span {
+.shop-main .shop-right-desc .type p span, .shop-main .shop-right-desc .type .shop-bottom .two span, .shop-bottom .shop-main .shop-right-desc .type .two span {
   font-weight: 400;
   color: #727272;
 }
@@ -1338,6 +1339,48 @@
   color: #3D3D3D;
 }
 .shop-main .shop-right-desc .share a {
+  color: #3d3d3d;
+}
+
+.shop-bottom .title {
+  font-size: 1.7rem;
+  font-weight: 400;
+  line-height: 1.6rem;
+  text-transform: capitalize;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  border-bottom: 0.2rem solid #efefef;
+  margin-bottom: 1.8rem;
+}
+.shop-bottom .title li {
+  padding: 1.2rem 0;
+}
+.shop-bottom .title li a {
+  color: #3d3d3d;
+}
+.shop-bottom .title .active, .shop-bottom .title li:hover, .shop-bottom .title .header .container nav .nav .nav__item .nav__link:hover, .header .container nav .nav .nav__item .shop-bottom .title .nav__link:hover, .shop-bottom .title .filterProduct .container .filter .product_list .list__item .list__link:hover, .filterProduct .container .filter .product_list .list__item .shop-bottom .title .list__link:hover, .shop-bottom .title .filterProduct .container .products .product__title .title__list .title__item:hover, .filterProduct .container .products .product__title .title__list .shop-bottom .title .title__item:hover, .shop-bottom .title .filterProduct .container .products .pagenation a:hover, .filterProduct .container .products .pagenation .shop-bottom .title a:hover, .shop-bottom .title .shop-main .shop-left .shop-left-images li:hover, .shop-main .shop-left .shop-left-images .shop-bottom .title li:hover {
+  font-weight: 700;
+  color: #46A358;
+  border-bottom: 0.2rem solid #46A358;
+}
+.shop-bottom .title .active a, .shop-bottom .title li:hover a, .shop-bottom .title .header .container nav .nav .nav__item .nav__link:hover a, .header .container nav .nav .nav__item .shop-bottom .title .nav__link:hover a, .shop-bottom .title .filterProduct .container .filter .product_list .list__item .list__link:hover a, .filterProduct .container .filter .product_list .list__item .shop-bottom .title .list__link:hover a, .shop-bottom .title .filterProduct .container .products .product__title .title__list .title__item:hover a, .filterProduct .container .products .product__title .title__list .shop-bottom .title .title__item:hover a, .shop-bottom .title .filterProduct .container .products .pagenation a:hover a, .filterProduct .container .products .pagenation .shop-bottom .title a:hover a, .shop-bottom .title .shop-main .shop-left .shop-left-images li:hover a, .shop-main .shop-left .shop-left-images .shop-bottom .title li:hover a {
+  color: #46A358;
+}
+.shop-bottom p, .shop-bottom .two {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2.4rem;
+  color: #727272;
+}
+.shop-bottom .two {
+  padding-top: 3rem;
+  padding-bottom: 1.8rem;
+}
+.shop-bottom h4 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 2.4rem;
   color: #3d3d3d;
 }
 

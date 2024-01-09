@@ -48,15 +48,19 @@ rangeInput.forEach(input => {
 
 // Shop Javascript
 
-let activePage = window.location.pathname;
+// let activePage = window.location.pathname;
 
-let activeHeader = document.querySelectorAll('.header .nav li a').forEach(link => {
-   if(link.href.includes(`${activePage}`)){
-    link.classList.add('active');
-   }else{
-    link.classList.remove('active');
-   }
-});
+// let activeHeader = document.querySelectorAll('.header .nav li a').forEach(link => {
+//    if(!(link.href.includes(`${activePage}`))){
+//     link.classList.remove('active');
+//    }else{
+//     link.classList.add('active');
+//    }
+// });
+
+
+
+
 
 // Cart
 
@@ -81,14 +85,15 @@ let plusBtn = document.querySelector('.plus');
 let price = document.querySelector('.price span');
 
 let s = 1;
+let priceIn = 119;
 
 plusBtn.addEventListener('click', () => {
     let countValue = parseInt(inputCount.value, 10);
-    let priceValue = parseInt(price.textContent, 10);
+    // let priceValue = parseInt(price.textContent, 10);
 
     if (countValue >= s) {
         inputCount.value = countValue + 1;
-        price.textContent = priceValue * inputCount.value;
+        price.textContent = priceIn * inputCount.value;
         minusBtn.disabled = false;
     }
 });
@@ -101,9 +106,9 @@ minusBtn.addEventListener('click', () => {
 
     if (countValue > s) {
         inputCount.value = countValue - 1;
-        price.textContent = priceValue / countValue;
+        price.textContent = priceValue - priceIn;
     } else if (countValue === s) {
-        price.textContent = priceValue;
+        price.textContent = priceIn;
         minusBtn.disabled = true;
     }
 });
