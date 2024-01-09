@@ -53,7 +53,9 @@ let activePage = window.location.pathname;
 let activeHeader = document.querySelectorAll('.header .nav li a').forEach(link => {
    if(link.href.includes(`${activePage}`)){
     link.classList.add('active');
-   } 
+   }else{
+    link.classList.remove('active');
+   }
 });
 
 // Cart
