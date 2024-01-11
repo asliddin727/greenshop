@@ -1,0 +1,92 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        //- FONTAWESOME CSS
+        link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css")
+        //- CSS STYLE
+        link(rel="stylesheet", href="../assets/css/main.css")
+        //- JAVASCRIPT 
+        script(defer src="../assets/js/script.js") 
+        title Greenshop 
+    body 
+        include ./components/header.pug
+
+        section.shopping__cart
+            .container 
+                ol.title
+                    li 
+                        a.home(href="#") home
+                    li 
+                        a(href="shop.html") / shop 
+                    li 
+                        a(href="#")  / Shopping Cart  
+                .product__cart 
+                    table.cart__left 
+                        thead 
+                            th Products
+                            th Price
+                            th Quantity
+                            th Total
+                        tbody
+                            tr 
+                                td.product
+                                    img(src="../assets/images/plant-1.png", alt="") 
+                                    .desc
+                                        span.name Barberton Daisy
+                                        span.sku SKU: 
+                                            span 1995751877966
+                                td.product__price $
+                                    span 119.00
+                                td.count 
+                                    a.minus(href="#") -
+                                    input.count(type="text", value=1)
+                                    a.plus(href="#") +
+                                td.price $
+                                        span 119.00
+                                td.btns
+                                    a.delete(href="#") 
+                                        i.fa-solid.fa-trash
+                            tr 
+                                td.product
+                                    img(src="../assets/images/plant-2.png", alt="") 
+                                    .desc
+                                        span.name Blushing Bromeliad
+                                        span.sku SKU: 
+                                            span 1995751877966
+                                td.product__price $
+                                    span 139.00
+                                td.count 
+                                    a.minus(href="#") -
+                                    input.count(type="text", value=1)
+                                    a.plus(href="#") +
+                                td.price $
+                                        span 139.00
+                                td.btns
+                                    a.delete(href="#") 
+                                        i.fa-solid.fa-trash
+                            tr 
+                                td.product
+                                    img(src="../assets/images/plant-3.png", alt="") 
+                                    .desc
+                                        span.name Aluminum Plant
+                                        span.sku SKU: 
+                                            span 1995751877966
+                                td.product__price $
+                                    span 179.00
+                                td.count 
+                                    a.minus(href="#") -
+                                    input.count(type="text", value=1)
+                                    a.plus(href="#") +
+                                td.price $
+                                        span 179.00
+                                td.btns
+                                    a.delete(href="#") 
+                                        i.fa-solid.fa-trash
+                            
+                                
+
+
+        include ./components/releted_product.pug
+        include ./components/footer.pug

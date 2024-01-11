@@ -1,0 +1,161 @@
+@use "sass:map";
+
+$font-weights: ('extralight': 200, 'light': 300, 'regular': 400, 'medium': 500, 'semibold': 600, 'bold': 700, 'extrabold': 800, 'black': 900);
+
+.shopping__cart{
+    .container{
+        .title{
+            @include flexbox-row;
+            align-items: center;
+            gap: .5rem;
+            margin: 3.6rem 0 5rem 0;
+            li{
+                a{
+                    font-size: 1.5rem;
+                    font-weight: map-get($map: $font-weights, $key: regular);
+                    line-height: 1.6rem;
+                    text-transform: capitalize;
+                    color: #727272;
+                }
+                .home{
+                    font-weight: map-get($map: $font-weights, $key: bold);
+                }
+            }
+        }
+        .product__cart{
+            position: relative;
+            width: max-content;
+            .cart__left{
+                thead{
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    padding: 1.1rem 0;
+                    border-bottom: .2rem solid #efefef;
+                    th{
+                        font-size: 1.6rem;
+                        font-weight: map-get($map: $font-weights, $key: medium);
+                        color: #3d3d3d;
+                    }
+                    th:nth-child(1){
+                        padding-right: 29rem
+                    }
+                    th:nth-child(2){
+                        padding-right: 11rem
+                    }
+                    th:nth-child(3){
+                        padding-right: 11rem;
+                    }
+                }
+                tbody{
+                    tr{
+                        @include flexbox-row;
+                        align-items: center;
+                        background-color: #efefef;
+                        margin: 2rem 0;
+                        padding-right: 2.6rem;
+                        td{
+                            display: flex;
+                            align-items: center; 
+                        }
+                        .product{
+                            margin-right: 9.8rem;
+                            img{
+                                width: 7rem;
+                                height: 7rem;
+                            }
+                            .desc{
+                                display: flex;
+                                align-items: center;
+                                flex-direction: column;
+                                align-items: flex-start;
+                                font-size: 1.6rem;
+                                font-weight: map-get($map: $font-weights, $key: medium);
+                                line-height: 1.6rem;
+                                margin-left: 1.4rem;
+                                width: 18rem;
+                                .name{
+                                    font-weight: map-get($map: $font-weights, $key: medium);
+                                    margin-bottom: .6rem;
+                                }
+                                .sku{
+                                    font-size: 1.4rem;
+                                    font-weight: map-get($map: $font-weights, $key: regular);
+                                    color: #727272;
+                                    line-height: 1.6rem;
+                                    span{
+                                        color: #3d3d3d;
+                                    }
+                                }
+                            }
+                        }
+                        .product__price {
+                            font-size: 1.7rem;
+                            font-weight: map-get($map: $font-weights, $key: medium);
+                            line-height: 1rem;
+                            color: #727272;
+                            margin-right: 9.2rem;
+                        }
+                        .count{
+                            display: flex;
+                            align-items: center;
+                            .minus{
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                border-radius: 50%;
+                                cursor: pointer;
+                                width: 2.5rem;
+                                height: 2.5rem;
+                                background-color: $green;
+                                color: #fff;
+                                font-size: 1.6rem;
+                                font-weight: map-get($map: $font-weights, $key: regular);
+                            }
+                            .minus:hover{
+                                filter: drop-shadow(0 0 1rem $green);
+                            }
+                            .plus{
+                                @extend .minus;
+                            }
+                            input{
+                                border: none;
+                                outline: none;
+                                background: transparent;
+                                font-size: 1.6rem;
+                                font-weight: map-get($map: $font-weights, $key: regular);
+                                color: #3d3d3d;
+                                width: 5rem;
+                                // display: flex;
+                                // align-items: center;
+                                // justify-content: center;
+                                text-align: center;
+                            }
+                        }
+                        .price{
+                            font-size: 1.6rem;
+                            font-weight: map-get($map: $font-weights, $key: bold);
+                            color: $green;
+                            line-height: 1.6rem;
+                            margin-left: 8.3rem;
+                        }
+                        .btns{
+                            display: flex;
+                            align-items: center;
+                            margin-left: 5rem;
+                            font-size: 2.2rem;
+                            a{
+                                color: #727272;
+                            }
+                            a:hover{
+                                filter: drop-shadow(0 0 1rem #333);
+                            }
+                        }
+                    }
+                    
+
+                }
+            }
+        }
+    }
+}

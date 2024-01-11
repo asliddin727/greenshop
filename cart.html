@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="../assets/css/main.css">
-    <script defer src="./assets/js/script.js"> </script>
+    <script defer src="../assets/js/script.js"> </script>
     <title>Greenshop </title>
   </head>
-  <body>
+  <body> 
     <header class="header"> 
       <div class="container">
         <nav> <img src="../assets/images/icons/logo.svg" alt="Logo">
@@ -29,59 +29,60 @@
         </div>
       </div>
     </header>
-    <main class="main"> 
-      <div class="container">
-        <ol class="shop-title-list">
-          <li><a href="index.html">home</a></li>
-          <li><a href="shop.html"> / shop</a></li>
+    <section class="shopping__cart">
+      <div class="container"> 
+        <ol class="title">
+          <li> <a class="home" href="#">home</a></li>
+          <li> <a href="shop.html">/ shop </a></li>
+          <li> <a href="#"> / Shopping Cart  </a></li>
         </ol>
-        <div class="shop-main">
-          <div class="shop-left"> 
-            <ol class="shop-left-images"> 
-              <li> <a href="#"><img src="../assets/images/plant-8.png" alt=""></a></li>
-              <li> <a href="#"><img src="../assets/images/plant-1.png" alt=""></a></li>
-              <li> <a href="#"><img src="../assets/images/plant-8.png" alt=""></a></li>
-              <li> <a href="#"><img src="../assets/images/plant-1.png" alt=""></a></li>
-            </ol><img class="home-img" src="../assets/images/plant-1.png" alt="Plant image">
-          </div>
-          <div class="shop-right-desc"> 
-            <h4 class="heading">Barberton Daisy</h4>
-            <p class="price-and-stars"> <span class="price">$ <span>119<span>.00</span></span></span><span class="stars"> <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><span class="desc">19 Customer Review</span></span></p>
-            <p class="short-description"><span class="title">Short Description:</span><span class="desc">The ceramic cylinder planters come with a wooden stand to help elevate your plants off the ground. The ceramic cylinder planters come with a wooden stand to help elevate your plants off the ground. </span></p>
-            <div class="size-list"><span>Size:</span>
-              <ol class="list"> 
-                <li class="active"><a href="#">S</a></li>
-                <li> <a href="#">M </a></li>
-                <li><a href="#">L  </a></li>
-                <li><a href="#">XL </a></li>
-              </ol>
-            </div>
-            <div class="buy"> <span class="count"> <a class="minus" href="#">- </a>
-                <input type="text" value="1"><a class="plus" href="#">+</a></span><a class="buy-btn" href="#">buy now </a><a class="cart-btn" href="cart.html">add to cart </a><a class="like-btn" href="#"> <i class="fa-regular fa-heart"> </i></a></div>
-            <div class="type"> 
-              <p>SKU: <span>1995751877966</span></p>
-              <p>Categories: <span>Potter Plants</span></p>
-              <p>Tags:  <span>Home, Garden, Plants</span></p>
-            </div>
-            <div class="share"><span>Share this products:</span><a href="#"> <i class="fa-brands fa-facebook-f"></i></a><a href="#"> <i class="fa-brands fa-twitter"></i></a><a href="#"> <i class="fa-brands fa-linkedin-in"></i></a><a href="#"><i class="fa-regular fa-envelope"> </i></a></div>
-          </div>
-        </div>
-        <div class="shop-bottom"> 
-          <ol class="title"> 
-            <li class="active"><a href="#">Product Description</a></li>
-            <li> <a href="#">Reviews (19)</a></li>
-          </ol>
-          <p>The ceramic cylinder planters come with a wooden stand to help elevate your plants off the ground. The ceramic cylinder planters come with a wooden stand to help elevate your plants off the ground. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla augue nec est tristique auctor. Donec non est at libero vulputate rutrum. Morbi ornare lectus quis justo gravida semper. Nulla tellus mi, vulputate adipiscing cursus eu, suscipit id nulla.</p>
-          <p class="two">Pellentesque aliquet, sem eget laoreet ultrices, ipsum metus feugiat sem, quis fermentum turpis eros eget velit. Donec ac tempus ante. Fusce ultricies massa massa. Fusce aliquam, purus eget sagittis vulputate, sapien libero hendrerit est, sed commodo augue nisi non neque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor, lorem et placerat vestibulum, metus nisi posuere nisl, in accumsan elit odio quis mi. Cras neque metus, consequat et blandit et, luctus a nunc. Etiam gravida vehicula tellus, in imperdiet ligula euismod eget. The ceramic cylinder planters come with a wooden stand to help elevate your plants off the ground.  </p>
-          <h4>Living Room:</h4>
-          <p>The ceramic cylinder planters come with a wooden stand to help elevate your plants off the ground. The ceramic cylinder planters come with a wooden stand to help elevate your plants off the ground. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          <h4>Dining Room:</h4>
-          <p>The benefits of houseplants are endless. In addition to cleaning the air of harmful toxins, they can help to improve your mood, reduce stress and provide you with better sleep. Fill every room of your home with houseplants and their restorative qualities will improve your life.</p>
-          <h4>Office:</h4>
-          <p>The ceramic cylinder planters come with a wooden stand to help elevate your plants off the ground. The ceramic cylinder planters come with a wooden stand to help elevate your plants off the ground. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <div class="product__cart"> 
+          <table class="cart__left"> 
+            <thead> 
+              <th>Products</th>
+              <th>Price</th>
+              <th>Quantity</th>
+              <th>Total</th>
+            </thead>
+            <tbody>
+              <tr> 
+                <td class="product"><img src="../assets/images/plant-1.png" alt="">
+                  <div class="desc"><span class="name">Barberton Daisy</span><span class="sku">SKU: <span>1995751877966</span></span></div>
+                </td>
+                <td class="product__price">$<span>119.00</span></td>
+                <td class="count"> <a class="minus" href="#">-</a>
+                  <input class="count" type="text" value="1"><a class="plus" href="#">+</a>
+                </td>
+                <td class="price">$<span>119.00</span></td>
+                <td class="btns"><a class="delete" href="#"> <i class="fa-solid fa-trash"></i></a></td>
+              </tr>
+              <tr> 
+                <td class="product"><img src="../assets/images/plant-2.png" alt="">
+                  <div class="desc"><span class="name">Blushing Bromeliad</span><span class="sku">SKU: <span>1995751877966</span></span></div>
+                </td>
+                <td class="product__price">$<span>139.00</span></td>
+                <td class="count"> <a class="minus" href="#">-</a>
+                  <input class="count" type="text" value="1"><a class="plus" href="#">+</a>
+                </td>
+                <td class="price">$<span>139.00</span></td>
+                <td class="btns"><a class="delete" href="#"> <i class="fa-solid fa-trash"></i></a></td>
+              </tr>
+              <tr> 
+                <td class="product"><img src="../assets/images/plant-3.png" alt="">
+                  <div class="desc"><span class="name">Aluminum Plant</span><span class="sku">SKU: <span>1995751877966</span></span></div>
+                </td>
+                <td class="product__price">$<span>179.00</span></td>
+                <td class="count"> <a class="minus" href="#">-</a>
+                  <input class="count" type="text" value="1"><a class="plus" href="#">+</a>
+                </td>
+                <td class="price">$<span>179.00</span></td>
+                <td class="btns"><a class="delete" href="#"> <i class="fa-solid fa-trash"></i></a></td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
-    </main>
+    </section>
     <section class="releted_product">
       <div class="container"> 
         <h4 class="title">releted products </h4>

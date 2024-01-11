@@ -79,39 +79,53 @@ shopImgList.forEach(img => {
 
 // Minus And Plus Price
 
-let minusBtn = document.querySelector('.minus');
-let inputCount = document.querySelector('.count input');
-let plusBtn = document.querySelector('.plus');
-let price = document.querySelector('.price span');
+let minusBtn = document.querySelectorAll('.minus');
+let inputCount = document.querySelectorAll('.count input');
+let plusBtn = document.querySelectorAll('.plus');
+let price = document.querySelectorAll('.price span');
 
 let s = 1;
 let priceIn = 119;
 
-plusBtn.addEventListener('click', () => {
-    let countValue = parseInt(inputCount.value, 10);
-    // let priceValue = parseInt(price.textContent, 10);
+plusBtn.forEach((btn, index) => {
+    btn.addEventListener('click', () => {
+        let countValue = parseInt(inputCount[index].value, 10);
+        let priceValue = parseInt(price[index].textContent, 10);
 
-    if (countValue >= s) {
-        inputCount.value = countValue + 1;
-        price.textContent = priceIn * inputCount.value;
-        minusBtn.disabled = false;
-    }
+        if (countValue >= s) {
+            inputCount[index].value = countValue + 1;
+            price[index].textContent = (priceIn * inputCount[index].value) + ".00";
+            minusBtn[index].disabled = false;
+        }
+    });
+});
+
+minusBtn.forEach((btn, index) => {
+    btn.addEventListener('click', () => {
+        let countValue = parseInt(inputCount[index].value, 10);
+        let priceValue = parseInt(price[index].textContent, 10);
+
+        if (countValue > s) {
+            inputCount[index].value = countValue - 1;
+            price[index].textContent = (priceValue - priceValue) + ".00";
+        } else if (countValue === s) {
+            price[index].textContent = priceIn + '.00';
+            minusBtn[index].disabled = true;
+        }
+    });
+});
+
+// DELETE BUTTON FOR JS
+
+let delButton = document.querySelectorAll('.btns .delete').forEach((btn, index) =>{
+    btn.addEventListener('click', ()=>{
+        let product = document.querySelectorAll('.cart__left tbody tr');
+        product[index].style.display = 'none';
+    })
 });
 
 
-minusBtn.addEventListener('click', () => {
-    let countValue = parseInt(inputCount.value, 10);
-    let priceValue = parseInt(price.textContent, 10);
-    console.log(priceValue);
 
-    if (countValue > s) {
-        inputCount.value = countValue - 1;
-        price.textContent = priceValue - priceIn;
-    } else if (countValue === s) {
-        price.textContent = priceIn;
-        minusBtn.disabled = true;
-    }
-});
 
 
 
