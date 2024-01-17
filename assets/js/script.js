@@ -83,18 +83,15 @@ let minusBtn = document.querySelectorAll('.minus');
 let inputCount = document.querySelectorAll('.count input');
 let plusBtn = document.querySelectorAll('.plus');
 let price = document.querySelectorAll('.price span');
-
-let s = 1;
-let priceIn = 119;
+let initialPrice = Array.from(price).map(element => parseInt(element.textContent, 10));
 
 plusBtn.forEach((btn, index) => {
     btn.addEventListener('click', () => {
         let countValue = parseInt(inputCount[index].value, 10);
-        let priceValue = parseInt(price[index].textContent, 10);
 
-        if (countValue >= s) {
+        if (countValue >= 1) {
             inputCount[index].value = countValue + 1;
-            price[index].textContent = (priceIn * inputCount[index].value) + ".00";
+            price[index].textContent = (initialPrice[index] * (countValue + 1)) + ".00";
             minusBtn[index].disabled = false;
         }
     });
@@ -103,17 +100,18 @@ plusBtn.forEach((btn, index) => {
 minusBtn.forEach((btn, index) => {
     btn.addEventListener('click', () => {
         let countValue = parseInt(inputCount[index].value, 10);
-        let priceValue = parseInt(price[index].textContent, 10);
 
-        if (countValue > s) {
+        if (countValue > 1) {
             inputCount[index].value = countValue - 1;
-            price[index].textContent = (priceValue - priceValue) + ".00";
-        } else if (countValue === s) {
-            price[index].textContent = priceIn + '.00';
+            price[index].textContent = (initialPrice[index] * (countValue - 1)) + ".00";
+        } else if (countValue === 1) {
+            price[index].textContent = initialPrice[index] + '.00';
             minusBtn[index].disabled = true;
         }
     });
 });
+
+
 
 // DELETE BUTTON FOR JS
 
