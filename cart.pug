@@ -85,8 +85,24 @@ html(lang="en")
                                     a.delete(href="#") 
                                         i.fa-solid.fa-trash
                             
-                                
-
-
-        include ./components/releted_product.pug
+                    .cart-total 
+                        .cart-container 
+                            h3 cart totals 
+                            span.cp Coupon Apply
+                            form(action="")
+                                input.input(type="text", placeholder="Enter coupon code here...")  
+                                input.btn(type="submit" value="Apply")               
+                            span.subtotal Subtotal
+                                span $2,683.00
+                            span.coupon Coupon Discount
+                                span (-) 00.00
+                            span.shipping Shiping
+                                span $16.00
+                            a(href="#").view_shipping View shipping charge
+                            span.total total 
+                                span $2,699.00
+                            .btn-group 
+                                a.btn-checkout(href="#") Proceed To Checkout
+                                a.btn-shop(href="#") Continue Shopping
+            include ./components/releted_product.pug
         include ./components/footer.pug
